@@ -1,9 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 .toc {
@@ -13,6 +15,10 @@ body {
     top: 20px;
     height: calc(100vh - 40px);
     overflow-y: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    margin-right: 20px;
 }
 
 .text-columns {
@@ -27,14 +33,18 @@ body {
     padding: 0 20px;
     overflow-y: auto;
     height: calc(100vh - 40px);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 0 10px;
 }
 
 h2, h3 {
-    color: #333;
+    color: #2a2a2a;
 }
 
 p {
     text-align: justify;
+    line-height: 1.6;
 }
 
 ul {
@@ -44,7 +54,12 @@ ul {
 
 ul li a {
     text-decoration: none;
-    color: #00f;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #0056b3;
 }
 
 .row {
@@ -64,7 +79,6 @@ ul li a {
     flex-direction: column;
 }
 
-
 .wrapper {
     display: flex;
 }
@@ -77,4 +91,27 @@ ul li a {
 .toc, .content {
     max-height: 100vh;
     overflow-y: auto;
+}
+
+/* Add some styling for headings in your content for better visibility */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Improve the visual separation between sections */
+.section {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
 }

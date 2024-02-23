@@ -1,20 +1,51 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
     text-align: center; /* Center the content */
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 h1, h2 {
-    color: #333;
+    color: #2a2a2a;
+    margin-bottom: 0.5em; /* Add a little space below headings */
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 20px; /* Add some space above the list */
 }
 
 ul li a {
+    display: inline-block; /* Allows for padding and margin */
+    margin: 10px 0; /* Add some vertical space between links */
+    padding: 10px 15px; /* Make links easier to click */
+    background-color: #fff;
+    color: #007bff; /* A more vibrant blue */
     text-decoration: none;
-    color: #00f;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    border-radius: 5px; /* Slightly rounded corners for a softer look */
+}
+
+ul li a:hover, ul li a:focus {
+    background-color: #007bff;
+    color: #fff; /* Invert colors on hover/focus for better interaction feedback */
+}
+
+/* Enhance overall spacing and alignment for larger screens */
+@media (min-width: 768px) {
+    body {
+        padding: 40px;
+    }
+
+    h1, h2 {
+        margin-bottom: 1em;
+    }
+
+    ul {
+        margin-top: 30px;
+    }
 }
