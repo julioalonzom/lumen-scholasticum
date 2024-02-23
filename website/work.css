@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.toc {
+    flex: 1;
+    max-width: 200px;
+    position: sticky;
+    top: 20px;
+    height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+.text-columns {
+    display: flex;
+    flex: 4;
+    max-width: 80%;
+    overflow-x: hidden;
+}
+
+.latin-text, .translation-text {
+    flex: 1;
+    padding: 0 20px;
+    overflow-y: auto;
+    height: calc(100vh - 40px);
+}
+
+h2, h3 {
+    color: #333;
+}
+
+p {
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #00f;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 0 10px;
+}
+
+/* Ensure the .content div is styled to contain the rows */
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.wrapper {
+    display: flex;
+}
+
+.toc, .content {
+    flex: 1;
+}
+
+/* Ensure the .toc and .content do not expand beyond the viewport height */
+.toc, .content {
+    max-height: 100vh;
+    overflow-y: auto;
+}
